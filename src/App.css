@@ -65,4 +65,32 @@ h1{
   cursor:pointer;
 }
 
+.inp-cont{
+  margin:2rem 0;
+}
 
+.form{
+  margin-top:2rem;
+}
+
+.f-group, .inner{
+  display: flex;
+  margin:1rem; 
+  justify-content: center;
+  align-items: center;
+}
+
+.f-group h5, .inner h5{
+  padding:0 1rem;
+}
+
+input{
+  outline:none;
+  padding:0.5rem 1rem;
+}
+
+i{
+  cursor:pointer;
+  font-size:1.5rem;
+  color:red;
+}

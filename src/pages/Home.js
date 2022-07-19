@@ -10,7 +10,7 @@ const Home = () => {
         <div
           className="type"
           onClick={() => {
-            nav("input");
+            nav("input/bar");
           }}
         >
           Bar Chart
@@ -18,7 +18,7 @@ const Home = () => {
         <div
           className="type"
           onClick={() => {
-            nav("input");
+            nav("input/line");
           }}
         >
           Line Chart
@@ -26,7 +26,7 @@ const Home = () => {
         <div
           className="type"
           onClick={() => {
-            nav("input");
+            nav("input/pie");
           }}
         >
           Pie Chart

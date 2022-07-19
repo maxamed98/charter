@@ -13,7 +13,7 @@ function App() {
       <div className="cont">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/input" element={<Input />} />
+          <Route path="/input/:type" element={<Input />} />
           <Route path="/bar" element={<Bar />} />
           <Route path="/line" element={<LineChart />} />
           <Route path="/pie" element={<PieChart />} />
