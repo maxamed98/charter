@@ -71,6 +71,9 @@ h1{
 
 .form{
   margin-top:2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .f-group, .inner{
@@ -93,4 +96,13 @@ i{
   cursor:pointer;
   font-size:1.5rem;
   color:red;
+}
+
+button{
+  padding:0.6rem 2rem;
+  font-size:1.4rem;
+  background:#3b3bc5;
+  color:white;
+  cursor:pointer;
+  width:60%;
 }
