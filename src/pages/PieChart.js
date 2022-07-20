@@ -1,23 +1,26 @@
 import React from "react";
 import { Pie } from "react-chartjs-2";
 import { dataset } from "../data";
+import { useSelector } from "react-redux";
 
 const PieChart = () => {
+  const pie = useSelector((state) => state.pie.value);
+
   const chartData = {
-    labels: dataset.map((d) => d.year),
+    labels: pie.labels,
     datasets: [
       {
-        label: "Random test",
-        data: dataset.map((d) => d.customersGained),
+        label: pie.label,
+        data: pie.data,
         backgroundColor: ["red", "green", "blue", "indigo", "violet", "gold"],
-        hoverOffset: 25,
+        hoverOffset: 5,
       },
     ],
   };
 
   return (
     <div className="pie-container">
-      <Pie data={chartData} width={700} height={500} />
+      <Pie data={chartData} />
     </div>
   );
 };

@@ -1,14 +1,17 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 import { dataset } from "../data";
+import { useSelector } from "react-redux";
 
 const LineChart = () => {
+  const line = useSelector((state) => state.line.value);
+
   const chartData = {
-    labels: dataset.map((d) => d.year),
+    labels: line.labels,
     datasets: [
       {
-        label: "Random test",
-        data: dataset.map((d) => d.customersGained),
+        label: line.label,
+        data: line.data,
         backgroundColor: "red",
       },
     ],
@@ -16,7 +19,7 @@ const LineChart = () => {
 
   return (
     <div className="chart-container">
-      <Line data={chartData} width={1100} height={700} />
+      <Line data={chartData} width={1100} height={650} />
     </div>
   );
 };

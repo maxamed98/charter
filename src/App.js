@@ -6,10 +6,12 @@ import Input from "./pages/Input";
 import Bar from "./pages/BarChart";
 import LineChart from "./pages/LineChart";
 import PieChart from "./pages/PieChart";
+import Header from "./components/Header";
 
 function App() {
   return (
     <Router>
+      <Header />
       <div className="cont">
         <Routes>
           <Route path="/" element={<Home />} />
