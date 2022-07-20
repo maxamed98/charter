@@ -1,4 +1,7 @@
 import { useNavigate } from "react-router-dom";
+import line from "../images/line.png";
+import bar from "../images/bar.png";
+import pie from "../images/pie.png";
 
 const Home = () => {
   const nav = useNavigate();
@@ -13,7 +16,8 @@ const Home = () => {
             nav("input/bar");
           }}
         >
-          Bar Chart
+          <img src={bar} alt="" />
+          <h4>Bar</h4>
         </div>
         <div
           className="type"
@@ -21,7 +25,8 @@ const Home = () => {
             nav("input/line");
           }}
         >
-          Line Chart
+          <img src={line} alt="" />
+          <h4>Line</h4>
         </div>
         <div
           className="type"
@@ -29,7 +34,8 @@ const Home = () => {
             nav("input/pie");
           }}
         >
-          Pie Chart
+          <img src={pie} alt="" />
+          <h4>Pie</h4>
         </div>
       </div>
     </div>
