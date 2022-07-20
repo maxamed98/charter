@@ -13,6 +13,7 @@ const LineChart = () => {
         label: line.label,
         data: line.data,
         backgroundColor: "red",
+        borderColor: "red",
       },
     ],
   };
